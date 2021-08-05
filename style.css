@@ -1,11 +1,41 @@
+/*Global styling */
+html {
+    font-size: 62.5%; /*10px, 1rem = 10px*/
+}
+
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-header {
-    display: flex;    
+body {
+    font-size: medium;
 }
-nav li{
+a {
+    text-decoration: none;
+}
+/*Nav section */
+.main-head {
+width: 100%;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex: 1 2 4.1rem;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
     list-style: none;
-
+    flex: 1;
+}
+#logo {
+   min-width: 13.1rem;
+   min-height: 4.1rem;
+   flex: 2;
+}
+nav li {
+    margin-right: 2rem;
 }
