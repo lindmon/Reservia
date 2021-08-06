@@ -12,6 +12,7 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
     font-size: medium;
@@ -46,6 +47,7 @@ nav ul {
 nav li {
     margin-right: 2rem;
 }
+/* Section with search form*/
 .search {
     background: chartreuse;
     width: 90%;
@@ -65,4 +67,93 @@ nav li {
 .filtr {
     margin-bottom:2.5rem;
     display: flex;
+}
+
+/* Hotel section*/
+
+.hotels {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;    
+}
+.left-box{
+    margin-right: 4.2rem;
+    flex-direction: column;
+    background-color: var(--grey-background);
+    flex: 2;
+    border-radius: 20px;
+}
+.container-left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2.7rem;
+
+}
+.card{
+    width:auto;
+    height: auto;
+    background-color: white;
+    border: solid white 5px;
+    border-radius: 20px;
+    margin-bottom: 3rem;   
+}
+.card h3, p {
+    margin: 1rem;
+}
+.right-box {
+    flex-direction: column;
+    background-color: var(--grey-background);
+    flex: 1;
+    border-radius: 20px;
+}
+.right-box h1 {
+    margin-top: 2.3rem;
+    margin-bottom: 3rem;
+    margin: 2.7rem;
+}
+.card-pop{
+    display: flex;
+    flex-direction: row;
+    width:auto;
+    height: auto;
+    border: solid white 5px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.card-pop h3, p {
+    margin-left:2rem;
+    margin-top: 1rem;
+}
+.card img {
+    object-fit: cover;
+    min-width: 253px;
+    height:118px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+.card-pop img {
+    object-fit: cover;
+    width: 139px;
+    height: 137px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+}
+.card-pop-text{
+    display: flex;
+    flex-direction: column;
+}
+.left-box h1 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin: 2.7rem;
+}
+.left-box a {
+    color: black;
+    margin: 2.7rem;
 }
