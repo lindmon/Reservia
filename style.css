@@ -2,13 +2,18 @@
 html {
     font-size: 62.5%; /*10px, 1rem = 10px*/
 }
-
+:root {
+    --main-blue:#0065FC;
+    --blue-light:#DEEBFF;
+    --grey-background:#F2F2F2;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
+    font-family: 'Raleway', sans-serif;
     font-size: medium;
 }
 a {
@@ -24,8 +29,10 @@ nav{
     display: flex;
     align-items: center;
     flex: 1 2 4.1rem;
+    margin-top: 3rem;
 }
 nav ul {
+    font-size: 1.7rem;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -38,4 +45,24 @@ nav ul {
 }
 nav li {
     margin-right: 2rem;
+}
+.search {
+    background: chartreuse;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.search h1 {
+    margin-bottom: 1rem;
+}
+.search p{
+    margin-bottom: 1rem;
+}
+.search form {
+    margin-bottom: 2rem;
+}
+.filtr {
+    margin-bottom:2.5rem;
+    display: flex;
 }
