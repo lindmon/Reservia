@@ -20,6 +20,9 @@ body {
 a {
     text-decoration: none;
 }
+ul {
+    list-style: none;
+}
 /*Nav section */
 .main-head {
 width: 100%;
@@ -49,7 +52,6 @@ nav li {
 }
 /* Section with search form*/
 .search {
-    background: chartreuse;
     width: 90%;
     margin: auto;
     margin-top: 3rem;
@@ -59,6 +61,7 @@ nav li {
     margin-bottom: 1rem;
 }
 .search p{
+    margin-left: 0;
     margin-bottom: 1rem;
 }
 .search form {
@@ -156,4 +159,25 @@ nav li {
 .left-box a {
     color: black;
     margin: 2.7rem;
+}
+/*Footer */
+footer{
+    background-color: var(--grey-background);
+}
+.footer-container{
+    width: 90%;
+    margin: auto;
+    background-color:var(--grey-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+.about{
+    flex: 1;
+}
+.our-hotels {
+    flex: 1;
+}
+.help{
+    flex: 1;
 }
