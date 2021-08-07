@@ -174,10 +174,21 @@ footer{
 }
 .about{
     flex: 1;
+    margin-bottom: 4rem;
 }
 .our-hotels {
     flex: 1;
 }
 .help{
     flex: 1;
+}
+footer h2 {
+    margin-top: 3rem;
+    margin-bottom: 2.7rem;
+}
+footer a {
+    color:black;
+}
+footer li {
+    margin-bottom: 1.7rem;
 }
