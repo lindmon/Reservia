@@ -160,6 +160,78 @@ nav li {
     color: black;
     margin: 2.7rem;
 }
+/*Activity section */
+.activity-sec{
+    background-color: chartreuse;
+    width: 90%;
+    margin:auto;
+    height: auto;
+    margin-top: 3rem;
+}
+.activity {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+.activity figure {
+    border-radius: 20px;
+}
+.activity img {
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.activity figcaption {
+    margin: 2rem;
+}
+#photo1 {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 32rem;
+    height: 40rem;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#photo2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 3rem;
+    width: 32rem;
+    height: 19rem;
+}
+#photo3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 3rem;
+    width: 32rem;
+    height: 11.3rem;
+
+}
+#photo4 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 32rem;
+    height: 40rem;
+}
+#photo5 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    margin-top: 3rem;
+    width: 31rem;
+    height: 13.6rem;
+}
+#photo6 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    width: 31rem;
+    height: 15rem;
+}
+
+
 /*Footer */
 footer{
     background-color: var(--grey-background);
