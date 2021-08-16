@@ -32,8 +32,8 @@ nav{
     margin: auto;
     display: flex;
     align-items: center;
-    flex: 1 2 4.1rem;
-    margin-top: 3rem;
+    flex: 1 2 4.2rem;
+    margin-top: 1.2rem;
 }
 nav ul {
     font-size: 1.7rem;
@@ -42,51 +42,72 @@ nav ul {
     list-style: none;
     flex: 1;
 }
+#inscription-ref {
+    opacity: 0.8;
+    font-weight: bold;
+    color:#0065FC;
+}
+#activity-ref {
+    opacity: 0.8;
+    font-weight: medium;
+    color:#000000;
+}
+#hotels-ref{
+    opacity: 0.8;
+    font-weight: semi-bold;
+    color:#0065FC;
+}
 #logo {
+    margin-top: 1.3rem;
    min-width: 13.1rem;
    min-height: 4.1rem;
    flex: 2;
 }
 nav li {
     margin-right: 2rem;
+   
 }
 /* Section with search form*/
 .search {
     width: 90%;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 3.4rem;
     margin-bottom: 2rem;
 }
 .search h1 {
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 .search p{
     margin-left: 0;
-    margin-bottom: 1rem;
 }
 
 .search form {
+    margin-top: 2.2rem;
     display: flex;
+    
     margin-bottom: 2rem;
 }
 form i{
-    font-size: 2rem;
-    width: 4rem;
-    height: 4rem;
+    font-size: 1.7rem;
+    width: 5rem;
+    height: 5rem;
+    padding-top: 1.2rem;
     text-align: center;
-    padding-top: 1rem;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     background-color:var(--grey-background) ;
 }
 ::placeholder{
+    font-size: 1.8rem;
+    font-weight:700;
     color: black;
     opacity: 1;
     font-family: 'Raleway', sans-serif;
 }
 form input {
-    width: 251px;
-    height: 4rem;
+    width: 240px;
+    height: 5rem;
     color: black;
     font-weight: bold;
     font-size: 1.5rem;
@@ -104,38 +125,33 @@ form button {
     border-top-right-radius: 15px;
     background-color: var(--main-blue);
     color: white;
-    font-weight: bold ;
-    font-size: 1.5rem;
+    font-weight: 700 ;
+    font-size: 1.8rem;
     font-family: 'Raleway', sans-serif;
 }
 /* FILTRES SECTION*/
 
+
 .filtr {
     margin-bottom:2.5rem;
-    display: flex;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
     
-}
-.filtre-word {
-    
-    height: 50px;
-    border-radius: 50px;
-    border-style: solid;
-    text-align: center;
-    border-color:transparent;
-    border-width: 2px;
-    padding-top: 1.5rem;
 }
 .filtre-i {
-    height: 50px;
     border-style: solid;
     border-radius: 50px;
     border-color:var(--grey-background);
     border-width: 2px;
     padding-right: 2rem;
-    margin-left: 2rem;
+    margin-left: 2.6rem;
 }
 .filtre-i i{
-    font-size: 2.2rem;
+    font-size: 2rem;
     width:50px;
     height: 50px;
     text-align: center;
@@ -147,19 +163,20 @@ form button {
 }
 .info-icon {
     display: flex;
+    align-items: center;
 }
 .info-icon i {
     font-size: 1.2rem;
     text-align: center;
-    padding-top: 0.6rem;
-    width: 2.6rem;
-    height: 2.6rem;
+    margin-left: 0.5rem;
+    width: 2.8rem;
+    height: 2.8rem;
     color: var(--main-blue);
     border-style: solid;
     border-color: var(--grey-background);
     border-radius:50px;
     border-width: 1px;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
 }
 .info-icon p{
 }
@@ -214,21 +231,26 @@ form button {
     border-radius: 20px;
 }
 .right-box h1 {
-    margin-top: 2.3rem;
-    margin-bottom: 3rem;
-    margin: 2.7rem;
+}
+.mini-header{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-pop{
+    font-size: 2rem;
 }
 .card-pop{
     display: flex;
     flex-direction: row;
-    width:auto;
+    width:80%;
     height: auto;
     border: solid white 5px;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin:3rem auto 3rem auto
 }
 .card-pop h3, p {
     margin-left:2rem;
@@ -373,4 +395,11 @@ footer li {
     margin-bottom: 1.7rem;
 }
 /*MOBILE VERSION */
-@media 
+@media only screen and (max-width:1440px){
+    .card-pop img {
+        object-fit: cover;
+        min-width: 253px;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+    }
+}
