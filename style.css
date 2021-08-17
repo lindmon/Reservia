@@ -33,7 +33,7 @@ nav{
     display: flex;
     align-items: center;
     flex: 1 2 4.2rem;
-    margin-top: 1.2rem;
+    margin-top: 2.7rem;
 }
 nav ul {
     font-size: 1.7rem;
@@ -56,6 +56,12 @@ nav ul {
     opacity: 0.8;
     font-weight: semi-bold;
     color:#0065FC;
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: var(--main-blue);
+    padding-top: 4.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 #logo {
     margin-top: 1.3rem;
@@ -166,11 +172,12 @@ form button {
     align-items: center;
 }
 .info-icon i {
+    padding-top: 0.5rem;
     font-size: 1.2rem;
     text-align: center;
     margin-left: 0.5rem;
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.6rem;
+    height: 2.6rem;
     color: var(--main-blue);
     border-style: solid;
     border-color: var(--grey-background);
@@ -200,7 +207,9 @@ form button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2.7rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
 
 }
 .card{
@@ -208,20 +217,24 @@ form button {
     height: auto;
     background-color: white;
     border: solid white 5px;
-    border-radius: 20px;
-    margin-bottom: 3rem;   
+    border-radius: 20px;  
+    margin-bottom: 3.3rem;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 .card p{
+    font-size: 1.3rem;
     margin-left: 1rem;
-
+    margin-bottom: 0.7rem;
 }
-.card h3, p {
-    margin: 1rem;
+.card h3{
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+    margin-left: 1rem;
+    font-size: 1.6rem;
 }
 .stars{
-
     margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
 
 }
 
@@ -230,17 +243,21 @@ form button {
     flex: 1;
     border-radius: 20px;
 }
-.right-box h1 {
-}
 .mini-header{
     width: 80%;
-    margin: 3rem auto;
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+    margin-top:5rem ;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.mini-header h1{
+    font-size: 2.2rem;
+}
 .icon-pop{
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 .card-pop{
     display: flex;
@@ -250,16 +267,25 @@ form button {
     border: solid white 5px;
     background-color: white;
     border-radius: 20px;
-    margin:3rem auto 3rem auto
+    margin-bottom: 3.2rem ;
+    margin-left:4.8rem ;
+    margin-right:4.8rem ;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 .card-pop h3, p {
     margin-left:2rem;
     margin-top: 1rem;
 }
+.card-pop h3{
+    font-size: 1.6rem;
+}
+.card-pop p{
+    font-size: 1.3rem;
+}
 .card img {
     object-fit: cover;
-    min-width: 253px;
-    height:118px;
+    min-width: 245px;
+    height:116px;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
 }
@@ -272,19 +298,23 @@ form button {
 }
 .card-pop-text object{
     padding-left: 1rem;
+    margin-top: 4rem;
+    justify-self: flex-end;
       
 }
-.card-pop object{
-    font-style: unset;
-}
 .left-box h1 {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    margin: 2.7rem;
+    font-size: 2.2rem;
+    margin-top: 5rem;
+    margin-left: 4rem;
 }
 .left-box a {
+    display: block;
     color: black;
-    margin: 2.7rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
 }
 /*Activity section */
 .activity-sec{
@@ -292,13 +322,15 @@ form button {
     margin: auto;
 }
 .activity-sec h1{
-    margin-bottom: 5rem;
-    margin-top: 3rem;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    margin-top: 6rem;
 }
 .activity{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 4rem;
+    margin-bottom: 5.8rem;
 }
 .activity img{
     width: 100%;
@@ -312,13 +344,17 @@ form button {
  border-radius: 20px;
  overflow: hidden;
  perspective: 1px;
- box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .activity-photo figcaption{
 padding: 20px;
+font-weight: 700;
+font-size: 1.6rem;
 }
 .activ-card-2 figcaption{
     padding: 20px;
+    font-weight: 700;
+font-size: 1.6rem;
 }
 #photo5 figcaption{
    padding: 22px;
@@ -332,19 +368,22 @@ padding: 20px;
     border-radius: 20px;
     overflow: hidden;
     perspective: 1px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 4rem;
+    font-weight: 700;
+font-size: 1.6rem;
 }
 #photo3 {
     flex: none;
     border-radius: 20px;
     overflow: hidden;
     perspective: 1px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .active-card-5 {
    
-
+    font-weight: 700;
+    font-size: 1.6rem;
     
 }
 #photo5{
@@ -352,7 +391,7 @@ padding: 20px;
     border-radius: 20px;
     overflow: hidden;
     perspective: 1px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 6rem;
 }
 #photo6{
@@ -374,6 +413,9 @@ footer{
     flex-direction: row;
     justify-content: stretch;
 }
+.footer-container h2{
+    font-size: 1.8rem;
+}
 .about{
     flex: 1;
     margin-bottom: 4rem;
@@ -385,14 +427,14 @@ footer{
     flex: 1;
 }
 footer h2 {
-    margin-top: 3rem;
-    margin-bottom: 2.7rem;
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
 }
 footer a {
     color:black;
 }
 footer li {
-    margin-bottom: 1.7rem;
+    margin-bottom: 1.2rem;
 }
 /*MOBILE VERSION */
 @media only screen and (max-width:1440px){
