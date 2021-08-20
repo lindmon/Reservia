@@ -119,8 +119,8 @@ form input {
     font-size: 1.5rem;
     padding-left: 1.5rem;
     border-style: solid;
-  border-width: 1px;
-  border-color: var(--grey-background);
+    border-width: 1px;
+    border-color: var(--grey-background);
        
 }
 form button {
@@ -134,6 +134,10 @@ form button {
     font-weight: 700 ;
     font-size: 1.8rem;
     font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+button .fas{
+    display: none;
 }
 /* FILTRES SECTION*/
 
@@ -141,6 +145,7 @@ form button {
 .filtr {
     margin-bottom:2.5rem;
     display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 1.8rem;
     font-weight: bold;
@@ -166,6 +171,9 @@ form button {
     background-color:var(--blue-light);
     color: var(--main-blue);
     margin-right: 1rem;    
+}
+.filtre-i:hover{
+    background-color: var(--main-blue);
 }
 .info-icon {
     display: flex;
@@ -437,11 +445,111 @@ footer li {
     margin-bottom: 1.2rem;
 }
 /*MOBILE VERSION */
-@media only screen and (max-width:1440px){
+
+
+@media (max-width: 414px){
+    /*Nav mobile*/
+    nav {
+        display: flex;              
+    }
+    #logo{
+    }
+    nav ul{
+    flex-direction: row-reverse;
+    }
+    #inscription-ref{
+    
+    }
+    #activity-ref{
+      
+    }
+    /*Search section*/
+    form button{
+        padding: 0;
+        border-radius: 15px;
+        transform: translateX(-10px);
+
+    }
+    button span{
+        display: none;
+    }
+    button .fas{
+        padding-top: 1.5rem;
+        display: block;
+        background-color: var(--main-blue);
+        border-radius: 15px;
+        width: 5rem;
+        height: 5rem;
+        font-size: 2rem;
+        z-index: 2;
+    }
+    /*FIltres mobile*/
+    .filtr{
+        flex-wrap: wrap;
+    }
+    /*Hotels setion mobile*/
+
+    .hotels{
+    flex-wrap: wrap-reverse;
+    }
+    .right-box{
+        width: 100%;
+        border-radius: 0;
+    }
+
     .card-pop img {
         object-fit: cover;
-        min-width: 253px;
-        border-top-left-radius:20px;
-        border-top-right-radius:20px;
+        width: 130px;
     }
+    .card-pop{
+margin-bottom: 2rem;
+width: 94%;
+margin-left: 1rem;
+margin-right: 1rem;
+    }
+    .left-box {
+        width: 100%;
+        background-color: white;
+    }
+    .card{
+        margin-bottom: 2rem;
+    }
+    .card img{
+        width: 325px;
+    }
+    .container-left{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /*Activity section*/
+    .activity-photo{
+        width: 337.68px;
+        height: 180px;
+        margin-bottom: 2rem;
+    }
+    #photo2{
+      
+    }
+    .activity-img{
+        display: block;
+        object-fit: cover;
+    }
+    .activity-photo figcaption{
+        display: block;
+    }
+    .activity{
+        grid-gap:0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+    #photo2, #photo3, #photo5, #photo6{
+        margin-bottom: 2rem;
+    }
+/*Footer*/
+.footer-container{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 }
