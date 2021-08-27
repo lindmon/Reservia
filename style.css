@@ -455,7 +455,7 @@ footer li {
         width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 49px 67px;
     }
     #logo{
     margin-left: 2rem;
@@ -467,60 +467,89 @@ footer li {
     
     }
     .other-ref{
+    
     grid-column: 1/3;
     grid-row: 2/3;
     }
 #hotels-ref{
     border-bottom-style: solid;
-    border-width: 3px;
+    border-width: 3.4px;
     border-color: var(--main-blue);
-    padding-left: 4rem;
-    padding-right: 3rem;
-    padding-bottom: 1.2rem;
-    
+    padding-left: 3.4rem;
+    padding-right: 4rem;
+    padding-bottom: 1.2rem;    
     border-top-style: none;
-   
-    
-
-} 
+    } 
     
     #inscription-ref{
-   margin-left: 25rem;
+   margin-left: 26.5rem;
     }
     #activity-ref{
         border-bottom-style: solid;
-    border-width: 3px;
+    border-width: 3.4px;
     border-color: var(--grey-background);
     padding-bottom: 1.2rem;
-    padding-left: 4rem;
-    padding-right: 8rem;
+    padding-left: 5.3rem;
+    padding-right: 6rem;
     margin-left: 0;
+    
         
     
     }
     /*Search section*/
+    .search{
+        margin-top: 2.4rem;
+    }
+    .search p{
+        margin-top: 1.4rem;
+    }
+    .search form{
+        display: inline-flex;
+        margin-top: 3.6rem;
+    }
     form button{
         padding: 0;
         border-radius: 15px;
-        transform: translateX(-10px);
-
+        transform: translateX(-6px);
     }
     button span{
         display: none;
     }
     button .fas{
-        padding-top: 1.5rem;
+        padding-top: 1.6rem;
         display: block;
         background-color: var(--main-blue);
         border-radius: 15px;
         width: 5rem;
         height: 5rem;
-        font-size: 2rem;
         z-index: 2;
     }
     /*FIltres mobile*/
     .filtr{
         flex-wrap: wrap;
+        font-size: 1.6rem;
+        margin-left: 0.3rem;
+        margin-top: 1rem;
+    }
+    .filtre-i{
+        margin-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+    .filtre-i i{
+        width: 4rem;
+        height: 4rem;
+        padding-top: 0.8rem;
+        transform: translate(-1px, -0.4px);
+    }
+    #filtr-word{
+        display: block;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        font-size: 1.7rem;
+    }
+    .info-icon p{
+        line-height: 1rem;
     }
 
     /*Hotels setion mobile*/
@@ -533,6 +562,7 @@ footer li {
         width: 100%;
         border-radius: 0;
         padding-bottom: 3rem;
+        margin-top: 2rem;
     }
 
     .card-pop img {
@@ -553,17 +583,20 @@ margin-bottom: 1rem;
         width: 90%;
         margin: 3rem auto 2rem auto;
     }
+    .mini-header h1{
+        margin-top: 0.8rem;
+    }
     .card{
         margin-bottom: 2rem;
         width: 90%;
-        margin: 1rem auto 1rem auto;
+        margin: 0.7rem auto 0.7rem auto;
     }
     .left-box{
         margin: 0;
     }
     .card img{
         width: 100%;
-        height: 103px;
+        height: 115px;
     }
     .card h3{
         margin: 0.5rem 0 0.5rem 1rem;
@@ -581,9 +614,9 @@ margin-bottom: 1rem;
     .left-box h1{
         display: block;
         width: 90%;
-        margin: 3rem auto 2rem auto;
+        margin: 4rem auto 1rem auto;
     }#show-more{
-        margin: 1rem 4rem 0 2rem;
+        margin: 2rem 4rem 0 2rem;
     }
     /*Activity section*/
     .activity-photo{
@@ -633,6 +666,7 @@ margin-bottom: 1rem;
     }
     .activity-sec h1{
         margin-left: 2rem;
+        margin-top: 5.5rem;
     }
 /*Footer*/
 .footer-container{
