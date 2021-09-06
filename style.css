@@ -20,6 +20,9 @@ body {
 a {
     text-decoration: none;
 }
+a:visited{
+    color: black;
+}
 ul {
     list-style: none;
 }
@@ -229,6 +232,7 @@ button .fas{
     border-radius: 20px;  
     margin-bottom: 3.3rem;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 .card p{
     font-size: 1.3rem;
@@ -280,6 +284,7 @@ button .fas{
     margin-left:4.8rem ;
     margin-right:4.8rem ;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 .card-pop h3, p {
     margin-left:2rem;
@@ -316,7 +321,7 @@ button .fas{
     margin-top: 5rem;
     margin-left: 4rem;
 }
-.left-box a {
+#show-more {
     display: block;
     color: black;
     font-size: 1.8rem;
@@ -343,7 +348,6 @@ button .fas{
 }
 .activity img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -354,61 +358,41 @@ button .fas{
  overflow: hidden;
  perspective: 1px;
  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+ cursor: pointer;
+}
+.activity-photo img{
+    height: 410px;
 }
 .activity-photo figcaption{
-padding: 20px;
+padding: 17px;
 font-weight: 700;
 font-size: 1.6rem;
 }
-.activ-card-2 figcaption{
-    padding: 20px;
+.photo figcaption{
+    padding: 17px;
     font-weight: 700;
 font-size: 1.6rem;
 }
-#photo5 figcaption{
-   padding: 22px;
+.activity-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-#photo6 figcaption{
-    padding: 20px;
-}
-.activ-card-2{
-}
-#photo2 {
+
+
+.photo {
     border-radius: 20px;
     overflow: hidden;
-    perspective: 1px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 4rem;
     font-weight: 700;
-font-size: 1.6rem;
-}
-#photo3 {
+    font-size: 1.6rem;
     flex: none;
-    border-radius: 20px;
-    overflow: hidden;
-    perspective: 1px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .active-card-5 {
    
     font-weight: 700;
     font-size: 1.6rem;
     
-}
-#photo5{
-    flex: none;
-    border-radius: 20px;
-    overflow: hidden;
-    perspective: 1px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 6rem;
-}
-#photo6{
-    flex: none;
-    border-radius: 20px;
-    overflow: hidden;
-    perspective: 1px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
 }
 /*Footer */
 footer{
@@ -446,7 +430,7 @@ footer li {
     margin-bottom: 1.2rem;
 }
 
-/*MOBILE VERSION */
+/*MOBILE VERSION iphone 8 width:375px*/
 
 
 @media (max-width: 414px){
@@ -496,7 +480,7 @@ footer li {
         
     
     }
-    /*Search section*/
+    /*Search section mobile*/
     .search{
         margin-top: 2.4rem;
     }
@@ -552,7 +536,7 @@ footer li {
         line-height: 1rem;
     }
 
-    /*Hotels setion mobile*/
+    /*Hotels section mobile*/
 
     .hotels{
     flex-wrap: wrap-reverse;
@@ -590,6 +574,7 @@ margin-bottom: 1rem;
         margin-bottom: 2rem;
         width: 90%;
         margin: 0.7rem auto 0.7rem auto;
+        cursor: pointer;
     }
     .left-box{
         margin: 0;
@@ -618,10 +603,9 @@ margin-bottom: 1rem;
     }#show-more{
         margin: 2rem 4rem 0 2rem;
     }
-    /*Activity section*/
+    /*Activity section mobile*/
     .activity-photo{
         width: 337.68px;
-        height: 180px;
         margin-bottom: 2rem;
     }
     #photo2{
@@ -668,11 +652,52 @@ margin-bottom: 1rem;
         margin-left: 2rem;
         margin-top: 5.5rem;
     }
-/*Footer*/
+/*Footer mobile*/
 .footer-container{
     flex-wrap: wrap;
     flex-direction: column;
     padding-bottom: 4rem;
 }
+}
+/*Tablet version breakpoint= */
+@media only screen and (min-width: 376px) and (max-width: 1102px){
+#inscription-ref {
+margin-left: 2rem;
+}
+#hotels-ref {
+    padding-right: 0;
+    padding-right: 0;
+}
+nav {
+    width: 100%;
+}
+#logo{
+    min-width: auto;
+    margin: auto;
+    flex: 1;
+    margin-left: 1rem;
+}
 
+.filtre-i{
+    margin-bottom: 1rem;
+}
+.left-box{
+    margin-bottom: 2rem;
+}
+.activity{
+    grid-template-columns: 1fr 1fr;
+}
+.about, .our-hotels, .help{
+    margin-right: 2rem;
+    
+}
+    
+    
+    }
+
+/* between tablet and screen*/ 
+@media only screen and (min-width: 1103px) and (max-width: 1482px){
+
+    
+    
 }
