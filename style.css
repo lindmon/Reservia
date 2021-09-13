@@ -19,6 +19,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 a:visited{
     color: black;
@@ -276,6 +277,7 @@ button .fas{
     display: flex;
     flex-direction: row;
     width:80%;
+    min-width: 295px;
     height: auto;
     border: solid white 5px;
     background-color: white;
@@ -689,9 +691,19 @@ nav {
     
     }
 
-/* between tablet and screen*/ 
-@media only screen and (min-width: 1103px) and (max-width: 1482px){
+/* large screen*/ 
+@media only screen and (min-width: 1450px) {
+.activity-photo {
+    max-width: 312px;
+}
+.activity-card {
+    max-width: 312px;
+}    
+}
+/*Extra large*/
+@media (min-width:1879px) {
+    .card {
+margin-right: 2rem;
 
-    
-    
+    }
 }
