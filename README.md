@@ -20,3 +20,5 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 - Le site devra être compatible avec les dernières versions de Chrome et Firefox.
 - Le HTML et le CSS doivent être séparés et le dossier doit être organisé
 - Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
+### Voir le projet
+lien :  https://lindmon.github.io/MariaEryzhenskaia_2_03062021/ 
