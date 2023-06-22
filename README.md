@@ -1,5 +1,4 @@
-### MariaEryzhenskaia_2_03062021
-# Learning project at Openclassrooms. 
+### Reservia
 L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia"(voir l'image ci-dessous).
 ![Maquette de projet Reservia ](/desktop.png)
 ### Éléments fournis par l'entreprise virtuelle.
